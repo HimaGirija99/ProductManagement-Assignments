@@ -1,0 +1,51 @@
+Assignment Question:
+how would you design the  uber app drop location recommendation system, ensuring it enables the best improvement in the metric: App open to ride book as a metric?
+1. Define the Objective and Metrics
+    Primary Objective: Reducing the time between opening the app and booking a ride, thereby improving the "App open to ride book" metric.
+    Secondary Metrics: Increase in successful ride completions, user satisfaction, and reduction in canceled rides due to incorrect or inconvenient drop locations.
+2. Understand User Behavior
+    Data Collection: Gather data on user drop location preferences, past ride history, frequently visited locations, and common destinations based on time and context (e.g., work, home, airport).
+    Contextual Factors: Consider factors like time of day, day of the week, user’s calendar events, traffic conditions, and current location.
+    User Segmentation: Identify different user personas (e.g., commuters, travelers, leisure users) and understand their specific needs.
+3. Designing the Recommendation System
+    Machine Learning Model:
+    Input Features: Current location, time, previous drop locations, historical patterns, traffic data, user profile data, calendar events, and local points of interest.
+    Output: A ranked list of recommended drop locations.
+    Personalization: Utilize collaborative filtering or a neural network-based model to personalize recommendations based on user behavior and similar users.
+    Real-time Data Integration: Use real-time data (traffic, events, weather) to adjust recommendations dynamically.
+    Feedback Loop: Allow users to provide feedback on recommendations to improve the model over time. Use this feedback to retrain the model.
+4. User Experience (UX) Design
+    Seamless Integration: Embed recommendations within the booking flow to make it intuitive. For instance, when a user selects their destination, automatically suggest the best drop-off point with a brief explanation (e.g., "Drop here to avoid traffic").
+    Customizable Options: Allow users to easily modify the recommended drop locations or save their preferences.
+    Quick Actions: Implement quick shortcuts for frequently used locations (e.g., "Work," "Home") directly on the app home screen.
+5. Experimentation and A/B Testing
+    Controlled Rollout: Start with a limited rollout to a small user group to test the effectiveness of the recommendations.
+    A/B Testing: Compare different versions of the recommendation system (e.g., one with basic recommendations vs. one with advanced personalization) to measure impact on the "App open to ride book" metric.
+    Iterate Based on Results: Analyze the data from the A/B tests to understand what works best and refine the model accordingly.
+6. Scalability and Infrastructure
+    Scalable Architecture: Ensure the recommendation system is scalable to handle millions of users concurrently, leveraging cloud infrastructure and distributed computing.
+    Low Latency: Optimizing the system for low latency to provide real-time recommendations without slowing down the app experience.
+7. Monitoring and Continuous Improvement
+    Real-time Monitoring: Setting up dashboards to monitor the impact of the recommendation system on key metrics like time to book, user satisfaction, and ride completion rates.
+    Regular Updates: Continuously update the model with new data and improve it based on changing user behavior and feedback.
+8. Cross-team Collaboration
+    Coordination with Data Science Team: Work closely with data scientists to refine the model and features used.
+    Collaboration with UX Designers: Ensure that the user experience is seamless and the recommendations are presented in a user-friendly way.
+    Feedback from Customer Support: Incorporate insights from customer support to identify common issues related to drop locations and improve the recommendation system accordingly.
+    By focusing on these steps, the system would not only improve the "App open to ride book" metric but also enhance the overall user experience, leading to increased user satisfaction and retention.
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+https://www.geeksforgeeks.org/haversine-formula-to-find-distance-between-two-points-on-a-sphere/
+https://towardsdatascience.com/tagged/collaborative-filtering
+https://www.microsoft.com/en-us/research/blog/contextual-bandit-breakthrough-enables-deeper-personalization/
+https://www.uber.com/en-IN/blog/scaling-ai-ml-infrastructure-at-uber/
+https://www.nngroup.com/articles/simplicity-vs-choice/
+https://www.optimizely.com/optimization-glossary/ab-testing/
+https://cloud.google.com/solutions/stream-analytics
+https://link.springer.com/chapter/10.1007/978-3-319-24465-5_1
+https://www.crazyegg.com/blog/conversion-rate-optimization/#:~:text=You%20can%20use%20conversion%20rate,before%20looking%20at%20your%20products.
+https://www.uber.com/en-ZA/blog/trouble-finding-the-delivery-drop-off-location/
+https://gdpr.eu/
+https://www.carnegiecouncil.org/initiatives-issues/artificial-intelligence-and-equality?utm_term=ethics%20in%20artificial%20intelligence&utm_campaign=ai_general&utm_source=google&utm_medium=cpc&hsa_acc=2829230793&hsa_cam=20509360511&hsa_grp=158162519270&hsa_ad=676084255120&hsa_src=g&hsa_tgt=kwd-360474110091&hsa_kw=ethics%20in%20artificial%20intelligence&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwodC2BhAHEiwAE67hJNVLig-T17a1WbFJex43d5uY-40bCPgYGEEvVoGvGf44gzyVxsJWkhoCu1YQAvD_BwE
+
